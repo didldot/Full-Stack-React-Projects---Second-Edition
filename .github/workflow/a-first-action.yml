@@ -1,0 +1,3 @@
+name: a-first-action
+run-name: ${{github.actor}} ran this action
+on: [pull_request]
