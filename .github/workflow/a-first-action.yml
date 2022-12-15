@@ -1,5 +1,5 @@
 name: a-first-action
-run-name: ${{github.actor}} ran this action
+run-name: ${{github.actor}} ran this workflow
 on:
     pull_request:
       branches:
