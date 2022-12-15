@@ -3,7 +3,7 @@ run-name: ${{github.actor}} ran this workflow
 on:
     pull_request:
       branches:
-        - lingohub
+        - main
 jobs:
   check-changes:
     runs-on: ubuntu-latest
