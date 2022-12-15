@@ -1,0 +1,11 @@
+name: a-first-action
+run-name: ${{github.actor}} ran this workflow
+on:
+    pull_request:
+      branches:
+        - lingohub
+jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
