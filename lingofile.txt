@@ -1,1 +1,3 @@
 A content inside the lingofile.
+
+A second sentence.
