@@ -1,4 +1,4 @@
-name: a-first-action
+name: a-first-workflow
 run-name: ${{github.actor}} ran this workflow
 on:
     pull_request:
