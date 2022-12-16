@@ -5,3 +5,5 @@ A second sentence.
 A third one.
 
 This comes from the lingohub branch.
+
+Greetings from foo
