@@ -10,8 +10,9 @@ jobs:
   check-changes:
     run_if:
       if: startsWith(github.head_ref, 'lingohub')
-      #if: startsWith(github.head_ref, 'lingohub_language_update')
       runs-on: ubuntu-latest
       steps:
-        - name: print-info-message
-          run: echo "This was a Pull Request from Lingohub"
+        - run: echo "This was a Pull Request from Lingohub"
+
+
+          #if: startsWith(github.head_ref, 'lingohub_language_update')
