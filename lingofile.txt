@@ -7,3 +7,5 @@ A third one.
 This comes from the lingohub branch.
 
 hey, lingohub_foo is here
+
+lingo foo
