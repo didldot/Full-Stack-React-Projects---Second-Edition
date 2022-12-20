@@ -1,0 +1,17 @@
+name: a-first-workflow
+run-name: ${{github.actor}} ran this workflow
+on:
+    pull_request:
+      types:
+        - opened
+      #branches:
+        #- main # the branch into which is merged
+jobs:
+  check-changes:
+    run_if:
+      if: startsWith(github.head_ref, 'lingohub')
+      #if: startsWith(github.head_ref, 'lingohub_language_update')
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - run: echo "This was a Pull Request from Lingohub"
