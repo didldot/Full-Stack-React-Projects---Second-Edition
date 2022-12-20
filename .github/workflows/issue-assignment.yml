@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
+          repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           node-version: '16'
       - name: 'Auto assign issue'
         uses: pozil/auto-assign-issue@v1.11.0
