@@ -12,5 +12,5 @@ jobs:
       - name: 'Auto assign issue'
         uses: pozil/auto-assign-issue@v1.11.0
         with:
-          repo-token: ${{ secrets.GITHUB.TOKEN }}
+          repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           assignees: didldot
