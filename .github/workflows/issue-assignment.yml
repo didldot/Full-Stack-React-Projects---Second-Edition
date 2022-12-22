@@ -15,4 +15,7 @@ jobs:
         with:
           #repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          assignees: somebody
+          assignees: didldot
+      - name: 'Send Slack Message'
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Issue created"}' https://hooks.slack.com/services/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
