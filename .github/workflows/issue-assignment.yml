@@ -15,4 +15,4 @@ jobs:
         with:
           #repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          assignees: didldot
+          assignees: somebody
