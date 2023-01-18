@@ -24,8 +24,7 @@ jobs:
         with:
           payload: |
             {
-              "key": "value",
-              "foo": "bar"
+              "text": "Cheers from Github"
             }
           env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
