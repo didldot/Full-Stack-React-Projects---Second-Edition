@@ -17,5 +17,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           assignees: didldot
       - name: 'Send Slack Message'
-        run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello Github Webhook!"}' https://hooks.slack.com/services/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
+        #run: |
+        #  curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello Github Webhook!"}' https://hooks.slack.com/services/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
+        id: slack
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "key": "value",
+              "foo": "bar"
+            }
+          env:
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
