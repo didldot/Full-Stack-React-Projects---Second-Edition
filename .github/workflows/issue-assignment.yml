@@ -18,4 +18,4 @@ jobs:
           assignees: didldot
       - name: 'Send Slack Message'
         run: |
-          curl -X POST -H 'Content-type: application/json' -H 'Authorization: Bearer xoxb-4672982336497-4673164031713-vXDRjk9jwLi7CnEBkO6hFnKx' --data '{"channel": "C04JZPWKT5M","text": "Hello from curl, :tada:"}' https://slack.com/api/chat.postMessage
+          curl -X POST -H 'Content-type: application/json' -H 'Authorization: Bearer xoxb-4672982336497-4673164031713-Fmzox2sP9OMSj2XYTJpxepPt' --data '{"channel": "C04JZPWKT5M","text": "Hello from curl, :tada:"}' https://slack.com/api/chat.postMessage
