@@ -5,8 +5,8 @@ on:
   #  types: [opened]
   pull_request_target: # needed for closing pull request (not just "pull_request")
     types: [opened]
-    paths: # only runs when these files have changed / or not changed when prefixed with "!"
-      - '!**.txt'
+    #paths: # only runs when these files have changed / or not changed when prefixed with "!"
+    #  - '!**.txt'
 jobs:
   close-pull-request:
     if: startsWith(github.head_ref, 'lingohub-')
