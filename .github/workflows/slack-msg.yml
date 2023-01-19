@@ -1,5 +1,7 @@
 name: Slack Message
-on: [opened]
+on:
+  issues:
+    types: [opened]
 jobs:
   new_opened_job:
     runs-on: ubuntu-latest
