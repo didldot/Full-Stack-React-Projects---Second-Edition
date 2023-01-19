@@ -13,7 +13,7 @@ jobs:
       with:
         payload: |
           {
-            "text": "A new Issue was opened",
+            "text": "A new Issue was opened"
           }
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
