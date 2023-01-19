@@ -1,0 +1,17 @@
+name: Slack Message
+on: [opened]
+jobs:
+  new_opened_job:
+    runs-on: ubuntu-latest
+    name: New Issue opened
+    steps:
+    - name: Send GitHub trigger payload to Slack Workflow Builder
+      id: slack
+      uses: slackapi/slack-github-action@v1.23.0
+      with:
+        payload: |
+          {
+            "text": "A new Issue was opened",
+          }
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
