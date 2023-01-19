@@ -27,6 +27,7 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
   slack-message:
+    runs-on: ubuntu-latest
     steps:
       - name: 'Info message'
         id: slack
