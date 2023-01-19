@@ -3,11 +3,17 @@ run-name: ${{github.actor}} ran this workflow
 on:
   pull_request:
     types: [opened]
+  pull_request_target: # for closing pull request
+    types: [opened]
 jobs:
   delete-branch:
-    if: startsWith(github.head_ref, 'lingohub')
+    if: startsWith(github.head_ref, 'lingohub-')
     runs-on: ubuntu-latest
     steps:
+      - name: 'Close branch which triggered pull_request_target'
+        uses: superbrothers/close-pull-request@v3
+        with:
+          comment: 'Pull Request was automatically closed by the Github Action'
       - name: 'Send Message to Slack'
         id: slack
         uses: slackapi/slack-github-action@v1.23.0
