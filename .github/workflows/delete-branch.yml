@@ -5,8 +5,7 @@ on:
     types: [opened]
 jobs:
   delete-branch:
-    run_if:
-      if: startsWith(github.head_ref, 'lingohub')
+    if: startsWith(github.head_ref, 'lingohub')
     runs-on: ubuntu-latest
     steps:
       - name: 'Send Message to Slack'
