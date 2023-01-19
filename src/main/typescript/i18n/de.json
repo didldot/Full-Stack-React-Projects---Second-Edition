@@ -1,5 +1,6 @@
 {
   "appName": "Logistics",
+  "appId": "12345",
   "appTitle": "VC Logistics",
   "loading": "Daten werden geladen ... ",
   "imprint": "Impressum",
