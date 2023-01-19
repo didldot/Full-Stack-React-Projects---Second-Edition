@@ -3,14 +3,16 @@ run-name: ${{github.actor}} ran this workflow
 on:
   #pull_request:
   #  types: [opened]
-  pull_request_target: # for closing pull request
+  pull_request_target: # needed for closing pull request (not just "pull_request")
     types: [opened]
+    paths: # only runs when these files have changed / or not changed when prefixed with "!"
+      - '!**.txt'
 jobs:
-  delete-branch:
+  close-pull-request:
     if: startsWith(github.head_ref, 'lingohub-')
     runs-on: ubuntu-latest
     steps:
-      - name: 'Close branch which triggered pull_request_target'
+      - name: 'Close pull request which triggered pull_request_target'
         uses: superbrothers/close-pull-request@v3
         with:
           comment: 'Pull Request was automatically closed by the Github Action'
