@@ -6,8 +6,8 @@ on:
   pull_request_target: # needed for closing pull request (not just "pull_request")
     types: [opened]
     paths: # only runs when these files have changed / or not changed when prefixed with "!"
-      - '!src/main/typescript/i18n/de.json'
       - 'src/main/typescript/i18n/de.json'
+      - '!src/main/typescript/i18n/de.json'
     #  - '!**.txt'
 jobs:
   close-pull-request:
