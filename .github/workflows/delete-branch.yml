@@ -11,9 +11,10 @@ jobs:
       - name: 'Send Message to Slack'
         id: slack
         uses: slackapi/slack-github-action@v1.23.0
-        with: |
-          {
-            "text": "The Pull Request Branch name started with lingohub"
-          }
+        with:
+          payload: |
+            {
+              "text": "The Pull Request Branch name started with lingohub"
+            }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
