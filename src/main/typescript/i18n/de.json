@@ -1,0 +1,664 @@
+{
+  "appName": "Logistics",
+  "appTitle": "VC Logistics",
+  "loading": "Daten werden geladen ... ",
+  "imprint": "Impressum",
+  "api": "API",
+  "delivery": "Sendung",
+  "foreignId": "Schlüssel Fremdsystem",
+  "createDate": "Anlagedatum",
+  "locker": "Fach",
+  "state": "Status",
+  "filterNoCriteria": "Kein Filter gesetzt, klicken Sie hier um einen Filter zu setzen",
+  "filter": "Filtereinstellungen",
+  "filterCubes": "Cubes",
+  "filterSites": "Standorte",
+  "filterStates": "Status",
+  "filterTypes": "Typen",
+  "fulltextSearch": "Volltextsuche",
+  "confirm": "Bestätigen",
+  "cancel": "Abbrechen",
+  "close": "Schließen",
+  "next": "Weiter",
+  "skip": "Überspringen",
+  "back": "Zurück",
+  "reset": "Zurücksetzen",
+  "print": "Drucken",
+  "create": "Erstellen",
+  "edit": "Bearbeiten",
+  "save": "Speichern",
+  "required": "Dieses Feld ist erforderlich.",
+  "delete": "Löschen",
+  "view": "Ansicht",
+  "add": "Hinzufügen",
+  "yes": "Ja",
+  "no": "Nein",
+  "none": "Keiner",
+  "all": "alle",
+  "retry": "Erneut versuchen",
+  "name": "Name",
+  "email": "E-Mail",
+  "zip": "Postleitzahl",
+  "city": "Ort",
+  "street": "Strasse",
+  "houseNumber": "Hausnummer",
+  "phone": "Telefon",
+  "saved": "Einstellungen wurden gespeichert.",
+  "noResult": "Kein Ergebnis gefunden",
+  "noFilter": "Kein Filter gesetzt",
+  "login": {
+    "title": "Anmeldung",
+    "continue": "Weiter zu: ",
+    "username": "E-Mail Adresse",
+    "password": "Passwort",
+    "logout": "Abmelden",
+    "failed": "Anmeldung fehlgeschlagen, bitte prüfen Sie Ihren Benutzernamen und Ihr Passwort",
+    "notConfigured": "Es wurde kein gültiger OAuth2 IdP für den angegebenen Benutzernamen gefunden, bitte versuchen Sie einen anderen Benutzernamen oder wenden Sie sich an den Support.",
+    "processing": "Wir überprüfen ihre Login-Daten ...",
+    "oauth2": {
+      "failed": "Ihr OAuth2 Token konnte nicht verarbeitet werden, bitte versuchen Sie es erneut."
+    },
+    "rememberMe": "Angemeldet bleiben"
+  },
+  "positions": "Positionen",
+  "missing": "fehlt",
+  "deliveries": {
+    "singular": "Sendung",
+    "plural": "Sendungen",
+    "deliveryId": "ID",
+    "noDeliveries": "Keine Sendungen gefunden",
+    "excelExport": "Excel-Export",
+    "excelExportNoDeliveries": "Es sind keine Sendungen vorhanden, Daten können nicht exportiert werden.",
+    "excelExportError": "Der Datenexport ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "excelExportComplete": "Erfolgreiches Abrufen von Daten. Ihr Download wird in Kürze beginnen...",
+    "storageCode": "Einlagerungscode",
+    "pickupCode": "Abhol-Code",
+    "usedPickupKey": "Verwendeter Abholschlüssel",
+    "parcelId": "Sendungsnummer",
+    "condition": "Zustand",
+    "checkedBy": "Geprüft durch",
+    "handedOverTo": "Übernommen durch",
+    "signature": "Unterschrift",
+    "building": "Gebäude",
+    "conditions": {
+      "Intact": "Unversehrt",
+      "Opened": "Geöffnet",
+      "Damaged": "Beschädigt",
+      "Destroyed": "Zerstört"
+    },
+    "weight": "Gewicht (kg)",
+    "sender": "Versender",
+    "carrier": "Transportunternehmen",
+    "receivingDepartment": "Empfangsabteilung",
+    "trackingUrl": "Tracking URL",
+    "numberOfItems": "Anzahl Gegenstände",
+    "create": {
+      "title": "Sendung anlegen",
+      "action": "Anlegen",
+      "ocr": {
+        "select": {
+          "title": "OCR Text wählen",
+          "ocrFragment": "OCR Text"
+        }
+      },
+      "pictureStep": {
+        "title": "Foto aufnehmen",
+        "action": {
+          "start": "Aufnahme starten",
+          "stop": "Aufnahme stoppen",
+          "analyze": "Bild analysieren",
+          "lastScan": "Letztes Bild erneut"
+        },
+        "noCamera": "Aufnahme kann nicht aktiviert werden. Bitte stellen Sie sicher, dass der Browser auf die Kamera zugreifen darf.",
+        "analyzing": {
+          "info": "Dieses Bild wird automatisch analysiert.",
+          "ocrFailed": "Es konnten keine Text im Bild erkannt werden."
+        }
+      },
+      "recipientStep": {
+        "title": "Empfänger",
+        "selection": "Empfänger auswählen",
+        "noneFound": "Die Bilderkennung konnte keinen Empfänger automatisch nachschlagen, Sie können manuell einen Empfänger definieren.",
+        "search": "Manuell Suchen",
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "pickupKey": "Ausweis-ID",
+        "searchTerms": {
+          "label": "Suchbegriffe",
+          "placeholder": "Name"
+        },
+        "manualHandoverRequired": "Manuelle Übergabe erforderlich",
+        "draft": "Entwurf (Recherche erforderlich)",
+        "reserveBox": "Box reservieren"
+      },
+      "deliveryDetails": {
+        "title": "Sendungsdetails",
+        "optional": {
+          "noMore": "Weitere Details hinterlegen."
+        }
+      },
+      "summary": {
+        "title": "Zusammenfassung",
+        "printLabel": "Begleitschein drucken"
+      }
+    },
+    "delete": {
+      "title": "Sendung löschen",
+      "info": "Sind Sie sicher, dass Sie die Sendung mit der ID {{deliveryId}}."
+    },
+    "markChecked": {
+      "title": "Geprüft",
+      "info": "Sind Sie sicher, dass Sie die Sendung {{deliveryId}} als geprüft markieren möchten?",
+      "success": "Sendung wurde geprüft"
+    },
+    "triggerCallback": {
+      "title": "Status übertragen",
+      "info": "Sind Sie sicher, dass Sie den Sendunsstatus {{state}} zur Sendung {{deliveryId}} erneut übertragen an {{url}} übertragen möchten?",
+      "success": "Event wurde ausgelöst"
+    },
+    "triggerNextState": {
+      "title": "Nächsten Status anspringen",
+      "info": "Sind Sie sicher, dass Sie den Sendunsstatus der Sendung {{deliveryId}} auf {{state}} setzen möchten? Callback Events werden automatisch ausgelöst.",
+      "success": "Status wurde erfolgreich geändert"
+    },
+    "manualHandover": {
+      "title": "Manuelle Übergabe",
+      "info": "Haben Sie die Sendung(en) {{deliveryId}} manuell an einen Empfänger übergeben?",
+      "signature": "Bitte hier unterschreiben:",
+      "success":  "{{no}} Sendung(en) manuell übergeben."
+    },
+    "edit": {
+      "title": "Sendung bearbeiten",
+      "info": "Sind Sie sicher, dass Sie die Sendung {{deliveryId}} bearbeiten möchten?",
+      "success": "Sendung wurde bearbeitet."
+    },
+    "shipped": {
+      "title": "Versendet",
+      "info": "Sind Sie sicher, dass sie die Sendung {{deliveryId}} auf den Status Versendet setzen möchten? Externe Systeme werden automatisch benachrichtigt.",
+      "success": "Status-Übertragung erfolgreich"
+    },
+    "deliveryType": "Typ",
+    "deliveryTypes": {
+      "Inbound": "Ankommend",
+      "Outbound": "Ausgehend"
+    },
+    "deliveryState": "Status",
+    "deliveryStates": {
+      "Draft": "Entwurf",
+      "Created": "Angelegt",
+      "Reserved": "Reserviert",
+      "Stored": "Eingelagert",
+      "PickedUp": "Abgeholt",
+      "Cancelled": "Retourniert",
+      "ManualHandover": "Manuelle Übergabe",
+      "Shipped": "Versendet",
+      "Returned": "Rücksendung"
+    },
+    "updateHistories": "Aktualisierungen",
+    "createdAt": "Angelegt am",
+    "createdBy": "Angelegt durch",
+    "updatedAt": "Aktualisiert am",
+    "updatedBy":  "Aktualisiert durch",
+    "updatedWhat":  "Aktualisierung",
+    "lastUpdatedAt": "Zuletzt aktualisiert am",
+    "lastUpdatedBy": "Zuletzt aktualisiert durch",
+    "storedAt": "Eingelagert am",
+    "storedBy": "Eingelagert durch",
+    "reminderSentAt": "Erinnerung gesendet am",
+    "pickedUpAt": "Ausgelagert am",
+    "pickedUpBy": "Abgeholt durch",
+    "checkedAt": "Geprüft am",
+    "createdAfter": "Angelegt ab",
+    "createdBefore": "Angelegt vor",
+    "storedAfter": "Eingelagert ab",
+    "storedBefore": "Eingelagert vor",
+    "pickedUpAfter": "Abgeholt ab",
+    "pickedUpBefore": "Abgeholt vor",
+    "recipients": {
+      "singular": "Empfänger",
+      "plural": "Empfänger",
+      "unknown": "Unbekannter Empfänger"
+    },
+    "order": {
+      "singular": "Bestellung",
+      "orderId": "Bestellnummer",
+      "deliveryNoteId": "Lieferscheinnummer",
+      "description": "Beschreibung",
+      "positionId": "Position",
+      "positionDescription": "Beschreibung"
+    },
+    "image": "Bild",
+    "attachments": {
+      "plural": "Anhänge"
+    },
+    "allowPickupUntil": "Späteste Abholung bis",
+    "storage": {
+      "singular": "Lagerung",
+      "hazardousGoods": "Gefahrenhinweise",
+      "storageTimeMax": "Maximale Lagerdauer (Stunden)",
+      "hours": "Stunden",
+      "destination": "Ziel",
+      "destinationName": "Name des Ziels",
+      "destinationDescription": "Beschreibung des Ziels"
+    },
+    "thirdParty": {
+      "singular": "API Integration",
+      "foreignId": "Fremdschlüssel",
+      "callbackUrl": "Callback-URL",
+      "storageKey": "Einlagerungsschlüssel (Physischer Token)"
+    },
+    "eventQueue": {
+      "singular": "Status-Übertragung",
+      "plural": "Status-Übertragungen",
+      "empty": "Bisher wurden keine Stati übertragen.",
+      "queueStatuses": {
+        "Created": "Angelegt",
+        "Succeeded": "Übertragen",
+        "Failed": "Fehler"
+      },
+      "queueState": "Übertragung",
+      "created": "Angelegt",
+      "retry": "Erneute Übertr.",
+      "failureCount": "Anz. F.",
+      "delivered": "Zugestellt / Abgelaufen",
+      "url": "Zieladresse",
+      "payload": "Anfrage",
+      "response": "Antwort"
+    },
+    "timeframe": {
+      "create": "Anlage von - bis",
+      "storage": "Einlagerung von - bis",
+      "pickedUp": "Abholung von - bis"
+    },
+    "tags": "Tags",
+    "addTag": "Hinzufügen",
+    "error": "Sendung kann nicht erstellt werden!",
+    "shipmentDetected": "Diese Lieferung gehört zu einer Sendung.",
+    "viewShipment": "Sendung öffnen",
+    "excelExportInProgress": "Daten vorbereiten..."
+  },
+  "shipments": {
+    "singular": "Sendungsverlauf",
+    "plural": "Sendungsverläufe",
+    "states": {
+      "Created": "Angelegt",
+      "WaitingForMailroomPickup": "Warten auf Abholung (durch Mailroom)",
+      "ProcessingInMailroom":  "In Bearbeitung (durch Mailroom)",
+      "WaitingForRecipientPickup": "Warten auf Abholung (durch Empfänger)",
+      "PickedUp":  "Abgeholt"
+    }
+  },
+  "dispatch": {
+    "singular": "Versand",
+    "plural": "Versandoptionen",
+    "select": "Auswählen",
+    "delete": {
+      "title": "Versandoption löschen",
+      "prompt": "Möchten Sie diese Versandoption wirklich  löschen?",
+      "success": "Versandoption wurde gelöscht."
+    },
+    "create": "Versandoption anlegen",
+    "externalRecipient": {
+      "company": "Firma",
+      "name": "Name",
+      "addressLine1": "Adresse",
+      "addressLine2": "Adresse Zeile 2",
+      "zip": "PLZ",
+      "city": "Ort",
+      "country": "Land"
+    },
+    "type": "Versandart",
+    "types": {
+      "DryCleaning": "Textilreinigung",
+      "Department": "Abteilung",
+      "Person": "Personal",
+      "DocumentDestruction": "Dokumentenvernichtung",
+      "Outbound": "Versand extern",
+      "Other": "Andere"
+    },
+    "label": "Bezeichnung",
+    "description": "Beschreibung / Hinweise",
+    "requireConfirmation": "Bestätigung erforderlich",
+    "requireInternalRecipient": "Interne Empfänger erforderlich",
+    "requireRecipientAddress": "Empfänger-Adresse erforderlich",
+    "requireDescription": "Beschreibung erforderlich",
+    "confirm": "Ich habe alle Zusatzhinweise gelesen und die Sendung entsprechend vorbereitet.",
+    "dispatch": "Versenden",
+    "noDispatchOptions" : "Es kann nichts versandt werden, da noch kein Versandoptionen angelegt sind.",
+    "noRecipientDialogTitle": "Keine Empfänger",
+    "noRecipientDialogContent": "Diesem Versand wurden keine Empfänger zugewiesen. Wollen Sie den Versand trotzdem speichern?"
+  },
+  "recipients": {
+    "singular": "Empfänger",
+    "plural": "Empfänger",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "cubeId": "VARIOCUBE",
+    "department": "Abteilung",
+    "building": "Gebäude",
+    "pickupKey": "Mitarbeiter-ID",
+    "actions": {
+      "reImport": "Neu importieren"
+    },
+    "deliveryDetails": "Lieferungen für diesen Empfänger"
+  },
+  "tenants": {
+    "singular": "Mandant",
+    "plural": "Mandanten",
+    "select": "Bitte wählen Sie einen Mandanten aus.",
+    "noNonConfigured": "Es sind aktuell keine neuen Mandanten verfügbar. Stelle sicher, dass der Mandant zumindest einen Cube im cubeadmin.center hat, der die App variocube.inhouse installiert hat.",
+    "switch": "Mandant wechseln",
+    "new": "Mandant anlegen",
+    "nothingToCreate": "Sie können aktuell keinen weiteren Mandanten konfigurieren. Stellen Sie sicher, dass der Mandant, der konfiguriert werden soll bereits im cubeadmin.center angelegt ist und dass er zumindest über einen cube verfügt der die app variocube.inhouse installiert hat.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "locale": "Sprache",
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "All": "Alle ein",
+      "Tenant": "Nur Mailroom",
+      "None": "Alle aus"
+    },
+    "emailTemplate": "E-Mail Text",
+    "emailSubjectTemplate": "E-Mail Betreff",
+    "smsTemplate": "SMS Text",
+    "templateForSite": "Für Standort",
+    "templateForAllSite": "alle",
+    "templateExists": "Vorlage bereits vorhanden!",
+    "emailSender": "E-Mail Absender",
+    "emailReplyTo": "Reply-To Adresse",
+    "smsSender": "SMS Absender",
+    "allowSplitStorage": "Sendungen aufteilen",
+    "allowPartialPickup": "Teilabholung",
+    "scheduleRegenerateAccessCode": "Zugriffscode regelmäßig neu erstellen",
+    "gracePeriod": "Grace-Period (Minuten)",
+    "gracePeriodDisabled": "Codes sofort deaktivieren",
+    "nfcCardLearning": "NFC-Karten anlernen",
+    "sms": "SMS Versand",
+    "checkAfterPickup": "Fächer nach Abholung prüfen",
+    "createDeliveryFromCode": "Sendungen via QR-Code anlegen",
+    "reminderHours": "Erinnerung nach (Stunden)",
+    "reminderDisabled": "Erinnerungen deaktiviert",
+    "retentionDays": "Löschfrist (Tage)",
+    "retentionDisabled": "Automatisches Löschen deaktiviert",
+    "storageTimeMax": "Max. Lagerdauer (Stunden)",
+    "loading": "Ihr Mandanten-Stammdaten werden abgerufen",
+    "failed": "Ihe Mandaten-Stammdaten konnten nicht abgerufen werden. Es liegt sehr wahrscheinlich ein Konfigurationsfehler vor. Bitte kontaktieren Sie unser Support-Team.",
+    "customTemplates": "E-Mail Vorlagen",
+    "templateType": "Vorlagenart",
+    "templateTypes": {
+      "StoredRecipient": "Eingelagert (an Empfänger)",
+      "StoredMailroom": "Eingelagert (an Mailroom)",
+      "ReminderRecipient": "Erinnerung (an Empfänger)",
+      "ReminderMailroom": "Erinnerung (an Mailroom)",
+      "OverdueRecipient": "Überschreitung Lagerdauer (an Empfänger)",
+      "OverdueMailroom": "Überschreitung Lagerdauer (an Mailroom)",
+      "PickedUpRecipient": "Abholung (an Empfänger)",
+      "PickedUpMailroom": "Abholung (an Mailroom)",
+      "CancelledRecipient": "Rückholung (an Empfänger)",
+      "CancelledMailroom": "Rückholung (an Mailroom)",
+      "ShippedSender": "Versendet (an den Absender)",
+      "ShippedMailroom": "Versandt  (an mailroom)",
+      "ManualHandoverCreatedRecipient": "Manuelle Übergabe angelegt (an Empfänger)",
+      "ReturnDeliveryStoredMailroom": "Rücksendung (an Mailroom)",
+      "ReturnDeliveryStoredRecipient": "Rücksendung (an Empfänger)",
+      "ReturnDeliveryRetrievedMailroom": "Rücksendung Abholumg (an Mailroom)",
+      "ReturnDeliveryRetrievedRecipient": "Rücksendung Abholung (an Empfänger)",
+      "ManualHandoverCreatedMailroom": "Manuelle Übergabe angelegt (an Mailroom)",
+      "ManualHandoverConfirmationRecipient": "Manuelle Übergabe durchgeführt (an Empfänger)"
+    },
+    "addTemplate": {
+      "title": "Vorlage hinzufügen"
+    },
+    "addSite": {
+      "title": "Standort hinzufügen"
+    },
+    "tagFragments": {
+      "plural": "Zusätzliche Hinweise",
+      "tag": "Tag",
+      "info": "Diese Info-Blöcke werden automatisch in e-Mails mit entsprechenden Tags eingefügt.",
+      "severity": "Level",
+      "severities": {
+        "Success": "Erfolgreich",
+        "Info": "Information",
+        "Warning": "Warnung",
+        "Error": "Fehler"
+      },
+      "title": "Title",
+      "text": "Text",
+      "add": "Hinweis hinzufügen"
+    },
+    "recipientRequired": "Empfänger Pflichtfelder",
+    "recipientRequireds": {
+      "None": "Keine",
+      "Name": "Name",
+      "Email": "Email",
+      "Phone": "Telefon",
+      "NameAndEmail": "Name und E-Mail",
+      "NameAndPhone": "Name und Telefon",
+      "All": "Alle"
+    },
+    "printView": "Sendungen Printansicht",
+    "barcodeHeight": "Barcode Höhe",
+    "barcodeWidth": "Barcode Breite",
+    "smtpServer": "Benutzerdefinierter SMTP Server",
+    "smtpServerSettings": {
+      "host": "SMTP Host",
+      "port": "SMTP Port",
+      "user": "SMTP Benutzer",
+      "password": "SMTP Passwörter",
+      "startTls": "SMTP STARTTLS"
+    },
+    "mapToManualHandover": "Manuelle Übergabe wenn kein Cube verfügbar",
+    "manualHandoverOption": "Manuelle Übergabe",
+    "manualHandoverOptions": {
+      "None": "Nicht konfiguriert",
+      "Name": "Name erforderlich",
+      "Signature": "Unterschrift erforderlich",
+      "NameAndSignature": "Name und Unterschrift erforderlich",
+      "Recipient": "Empfänger erforderlich",
+      "RecipientAndSignature": "Empfänger und Unterschrift erforderlich"
+    },
+    "disableOcr": "OCR deaktivieren",
+    "hideRecipientPickupKey": "Mitarbeiter Badges verstecken"
+  },
+  "users": {
+    "singular": "Benutzer",
+    "plural": "Benutzer",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "name": "Name",
+    "email": "E-Mail Adresse",
+    "receiveNotifications": "Erhält Benachrichtigungen",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "repeat": "Wiederholung",
+    "role": "Rolle",
+    "roles": {
+      "superuser": "Super-User",
+      "admin": "Administrator",
+      "user": "Benutzer",
+      "recipient": "Empfänger"
+    },
+    "setPassword": {
+      "title": "Neues Passwort setzen"
+    },
+    "changePassword": {
+      "title": "Passwort ändern",
+      "currentPassword": "Ihr aktuelles Passwort",
+      "nextPassword": "Ihr neues Passwort",
+      "confirmPasswort": "Wieder holen Sie Ihr neues Passwort",
+      "errorCurrentPassword": "Passwort konnte nicht geändert werden, prüfen Sie Ihr aktuelles Passwort."
+    },
+    "delete": {
+      "title": "Benutzer löschen",
+      "prompt": "Möchten Sie diesen Benutzer wirklich  löschen?",
+      "success": "Benutzer wurde gelöscht."
+    },
+    "create": {
+      "title": "Benutzer anlegen"
+    }
+  },
+  "cubes": {
+    "singular": "Cube",
+    "plural": "Cubes",
+    "description": "Beschreibung",
+    "connectionState": "Verbindungsstatus",
+    "connected": "Online",
+    "notConnected": "Offline",
+    "location": "GPS-Position",
+    "supportsBarcodeReader": "Barcode-Reader",
+    "select": "Cube auswählen",
+    "boxes": {
+      "singular": "Fach",
+      "plural": "Fächer",
+      "lockState": {
+        "label": "Status",
+        "Open": "Offen",
+        "Closed": "Geschlossen",
+        "Blocked": "Blockiert",
+        "Breakin": "Einbruch",
+        "unknown": "Unbekannt"
+      },
+      "boxType": "Typ",
+      "openBox": "Fach öffnen",
+      "openBoxInfoEmpty": "Sind Sie sicher, dass Sie das leere Fach {{boxDescription}} öffnen möchten?",
+      "openBoxInfoOccupied": "Sind Sie sicher, dass Sie das belegte Fach {{boxDescription}} öffnen möchten?",
+      "available": "Verfügbar",
+      "enabled": "Ja",
+      "disabled": "Deaktiviert",
+      "disabledInfo": "Fach ist deaktiviert und kann nicht belegt werden. Eventuell aktuell eingelagerte Sendungen können noch abgeholt werden.",
+      "enableBox": "Fach aktivieren",
+      "enableBoxInfo": "Sind Sie sicher, dass Sie Fach {{boxDescription}} aktivieren möchten?",
+      "disableBox": "Fach deaktivieren",
+      "disableBoxInfo": "Sind Sie sicher, dass Sie Fach {{boxDescription}} deaktivieren möchten?",
+      "occupancy": "Belegung",
+      "noBoxes": "Keine Fächer gefunden.",
+      "noOccupancies": "Dieses Fach ist aktuell nicht belegt.",
+      "actions": {
+        "openInCubeAdminCenter": "Belegung cubeadmin.center anzeigen (nur für VARIOCUBE Support).",
+        "endOccupancy": {
+          "title": "Belegung beenden",
+          "confirm": "Sind Sie sicher, dass Sie die Belegung im Fach {{boxNumber}} / {{cube}} beenden möchten?"
+        }
+      }
+    },
+    "utilization": {
+      "label": "Auslastung",
+      "total": "Gesamt",
+      "occupied": "Belegt",
+      "available": "Verfügbar",
+      "disabled": "Deaktiviert"
+    },
+    "accessCodes": {
+      "readonly": "Nur lesen",
+      "openNonOccupied": "Nicht belegte öffnen",
+      "fullAccess": "Vollzugriff"
+    },
+    "noCubes": "Keine Cubes gefunden, bitte kontaktieren Sie den Support."
+  },
+  "settings": {
+    "singular": "Einstellung",
+    "plural": "Einstellungen",
+    "userSettings": "Benutzereinstellung: {{name}}",
+    "tenantSettings": "Mandantenkonfiguration: {{name}}",
+    "user": {
+      "accessCode": "Zugriffscode",
+      "accessCodeInfo": "Mit diesem Code können Sie sich auf sämtlichen VARIOCUBE Anlagen Ihres Mandanten anmelden.",
+      "regenerate": "Neuen Code generieren",
+      "userData": "Benutzerdaten",
+      "changeUserData": "Benutzerdaten ändern",
+      "changePassword": "Passwort ändern"
+    },
+    "csvImport": {
+      "columnConfig": "CSV Import Spaltenkonfiguration",
+      "cubeConfig": "Gebäude Cube Zuordnungen",
+      "addMapping": "Zuordnung hinzufügen",
+      "CSVMappingColEnum": {
+        "FirstName": "Vorname",
+        "LastName": "Familienname",
+        "Email": "E-Mail Adresse",
+        "Phone": "Telefon",
+        "PickupKey": "Abhol-Code",
+        "CubeId": "Cube",
+        "Department": "Abteilung",
+        "Building": "Gebäude"
+      }
+    },
+    "edit": "Einstellungen bearbeiten"
+  },
+  "sites": {
+    "singular": "Standort",
+    "plural": "Standorte",
+    "default": "Standardseite",
+    "filter": "Standort filtern",
+    "allSites": "Alle Standorte",
+    "emailSender": "E-Mail Absender",
+    "smtpUser": "SMTP Benutzer",
+    "smtpPassword": "SMTP Passwort"
+  },
+  "returns": {
+    "singular": "Rücksendung",
+    "plural": "Rücksendungen",
+    "parameter": "Parameter",
+    "enabled": "Aktiviert",
+    "mandatory": "Pflichtfeld",
+    "deliveryNoteId": "Lieferscheinnummer",
+    "reasonForReturn": "Grund der Rückgabe",
+    "WrongItem": "falsche Lieferung",
+    "DefectItem": "Ware defekt",
+    "email": "Email",
+    "phone": "Telefon",
+    "customerId": "Kundennummer",
+    "positionNumbers" :  "Positionsnummern",
+    "additionalInfo" : "Zusatztext"
+  },
+  "notFound": {
+    "title": "404: Nicht gefunden",
+    "info": "Wir konnten keine Seite für die URL {{path}} finden.",
+    "home": "Startseite aufrufen"
+  },
+  "warning": {
+    "title": "Achtung",
+    "hint": "Diese Aktion ist nicht widerrufbar."
+  },
+  "reserveBox": {
+    "reserveBox": "Reservierungsfach",
+    "title": "Alternative Fächer bei der Zustellung, wenn die gewählte Fachgröße nicht mehr verfügbar ist",
+    "addFallback": "Alternative hinzufügen",
+    "addBoxtype": "Fach-Typ hinzufügen",
+    "deleteBoxType": "Fach-Typ löschen",
+    "forBoxtype": "Für Typ",
+    "fallback": "Alternative"
+  },
+  "tags": {
+    "personal": "Persönlich",
+    "department": "Abteilung"
+  },
+  "barcode": {
+    "scan": "Barcode Scanner",
+    "lastBarCode": "Letzter Code",
+    "notFound": "Es wurde keine Sendung zum Einlagerungscode: {{storageCode}} gefunden.",
+    "wrongState": "Die Sending kann nicht mehr manuell übergeben werden."
+  },
+  "loadDataError": {
+    "message": "Die Daten konnten nicht geladen werden.",
+    "btn": "Filter zurücksetzen und erneut versuchen"
+  },
+  "taskList": {
+    "title": "Aufgabenliste",
+    "shipped": "Ankommende Sendungen",
+    "pickup": "Abzuholende Sendungen"
+  },
+  "notifications": {
+    "singular": "Benachrichtigung",
+    "plural": "Benachrichtigungen",
+    "info": "Benutzen Sie diese Ansicht um Test-Nachrichten auszulösen. Alle E-Mails werden an {{email}} gesendet.",
+    "noTemplates": "Keine Vorlagen gefunden. Bitte konfigurieren Sie die Vorlagen in der Mandantenkonfiguration.",
+    "sendTest": "Testnachricht senden",
+    "sendOutcome": "Testnachricht mit der Vorlage {{template}} wurde an {{email}} gesendet.",
+    "sendError": "Testnachricht konnte nicht gesendet werden. Bitte überprüfen Sie die Konfiguration."
+  }
+}
