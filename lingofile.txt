@@ -3,3 +3,5 @@ A content inside the lingofile.
 A second sentence.
 
 A third one.
+
+Fourth.
