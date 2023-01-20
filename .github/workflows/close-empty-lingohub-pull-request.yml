@@ -28,6 +28,8 @@ jobs:
     # run only if there are changed files
     # if: ${{needs.changedfiles.outputs.ts}}
     steps:
+      - name: echo-test-text
+        run: echo "** This is just some test text **"
       - name: echo-all-changed-files
         run: echo ${{needs.changed-files.outputs.all}}
       - name: echo-json-changed-files
