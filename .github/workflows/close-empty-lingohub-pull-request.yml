@@ -22,7 +22,7 @@ jobs:
         run: | 
           echo ${{ github.head_ref }}
           echo ${{ github.sha }}
-          git diff ${{ github.head_ref }} ${{ github.base_ref }}
+          echo ${ git diff ${{ github.head_ref }} ${{ github.base_ref}} }
       - name: get-changed-files
         id: changes
         run: |
