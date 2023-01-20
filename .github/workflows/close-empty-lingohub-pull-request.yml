@@ -1,6 +1,7 @@
 name: Close Empty Lingohub Branch
 run-name: ${{github.actor}} ran this workflow
 on:
+  workflow_dispatch: # to run this workflow manually
   #pull_request:
   #  types: [opened]
   pull_request_target: # needed for closing pull request (not just "pull_request")
