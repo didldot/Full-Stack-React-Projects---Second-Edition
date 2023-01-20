@@ -1,4 +1,4 @@
-A content inside the lingofile.
+echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
 
 A second sentence.
 
