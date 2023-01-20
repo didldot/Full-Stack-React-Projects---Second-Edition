@@ -17,6 +17,11 @@ jobs:
     steps:
       - name: checkout-repository
         uses: actions/checkout@v2
+      - name: some-test-outputs
+        run: | 
+          echo ${{ github.event.pull_request.base.sha }}
+          echo ${{ github.sha }}
+          echo $(git diff)
       - name: get-changed-files
         id: changes
         run: |
