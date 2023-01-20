@@ -1,7 +1,7 @@
 name: Git Diff
 run-name: Git Diff Workflow run by ${{github.actor}}
 on:
-  pull-request:
+  pull_request:
     types: [opened]
 jobs:
   check-changed-files:
