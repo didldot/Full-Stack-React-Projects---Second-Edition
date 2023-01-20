@@ -10,4 +10,6 @@ Fifth.
 
 foo-branch.
 
-src/main/typescript/i18n/de.json
+src/main/typescript/i18n/de.json.
+
+foo
