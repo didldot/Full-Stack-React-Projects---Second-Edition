@@ -21,7 +21,7 @@ jobs:
         run: | 
           echo ${{ github.event.pull_request.base.sha }}
           echo ${{ github.sha }}
-          echo $(git diff)
+          git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }}
       - name: get-changed-files
         id: changes
         run: |
