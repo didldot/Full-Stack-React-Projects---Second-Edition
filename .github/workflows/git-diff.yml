@@ -1,0 +1,36 @@
+name: Git Diff
+run-name: Git Diff Workflow run by ${{github.actor}}
+on:
+  pull-request:
+    types: [opened]
+jobs:
+  check-changed-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-repository
+        uses: actions/checkout@v2
+      - name: diff-action
+        uses: technote-space/get-diff-action@v6
+        with:
+          FILES:
+            de.json
+      - name: de.json-was-changed
+        if: env.GIT_DIFF
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "The json file WAS CHANGED"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      - name: de.json-was-not-changed
+        if: !env.GIT_DIFF
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "Github Action Workflow ran"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
