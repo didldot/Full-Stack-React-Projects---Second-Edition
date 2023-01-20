@@ -11,3 +11,5 @@ Fifth.
 foo-branch.
 
 src/main/typescript/i18n/de.json
+
+lingofile changed
