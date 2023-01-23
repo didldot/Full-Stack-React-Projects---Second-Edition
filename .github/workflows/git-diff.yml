@@ -14,6 +14,10 @@ jobs:
         with:
           FILES:
             de.json
+      - name: echo-git_diff
+        run: echo ${{env.GIT_DIFF}}
+      - name: echo-matched_files
+        run: echo ${{env.MATCHED_FILES}}
       - name: de.json-was-changed
         if: env.GIT_DIFF
         uses: slackapi/slack-github-action@v1.23.0
