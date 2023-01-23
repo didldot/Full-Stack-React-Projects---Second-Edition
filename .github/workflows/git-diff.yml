@@ -19,7 +19,7 @@ jobs:
       - name: echo-matched_files
         run: echo ${{env.MATCHED_FILES}}
       - name: de.json-was-changed
-        if: env.GIT_DIFF
+        if: env.MATCHED_FILES
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
