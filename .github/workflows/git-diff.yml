@@ -32,7 +32,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "Github Action Workflow ran"
+              "text": "The json file was NOT changed"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
