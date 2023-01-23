@@ -24,13 +24,13 @@ jobs:
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-      - name: de.json-was-not-changed
-        if: !env.GIT_DIFF
-        uses: slackapi/slack-github-action@v1.23.0
-        with:
-          payload: |
-            {
-              "text": "Github Action Workflow ran"
-            }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      #- name: de.json-was-not-changed
+      #  if: !env.GIT_DIFF
+      #  uses: slackapi/slack-github-action@v1.23.0
+      #  with:
+      #    payload: |
+      #      {
+      #        "text": "Github Action Workflow ran"
+      #      }
+      #  env:
+      #    SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
