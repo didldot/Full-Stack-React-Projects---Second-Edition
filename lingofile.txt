@@ -12,4 +12,4 @@ foo-branch.
 
 src/main/typescript/i18n/de.json
 
-only lingofile.txt change
+only lingofile.txt change - ist das so?
