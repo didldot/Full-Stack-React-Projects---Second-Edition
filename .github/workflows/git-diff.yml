@@ -1,9 +1,9 @@
 name: Git Diff
 run-name: Git Diff Workflow run by ${{github.actor}}
 on:
-  pull_request:
+  pull_request: # for get-diff-action
     types: [opened]
-  pull_request_target:
+  pull_request_target: # for close-pull-request
     types: [opened]
 jobs:
   check-changed-files:
@@ -16,10 +16,6 @@ jobs:
         with:
           FILES:
             de.json
-      - name: echo-git_diff
-        run: echo ${{env.GIT_DIFF}}
-      - name: echo-matched_files
-        run: echo ${{env.MATCHED_FILES}}
       - name: de.json-was-changed
         if: env.MATCHED_FILES
         uses: slackapi/slack-github-action@v1.23.0
@@ -37,6 +33,21 @@ jobs:
           payload: |
             {
               "text": "Github Action Workflow ran"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  close-pull-request:
+    if: startsWith(github.head_ref, 'lingohub-') && env.GIT_DIFF && !env.MATCHED_FILES
+    runs-on: ubuntu-latest
+    steps:
+      # - TODO close pull request
+      - name: 'Send Slack Message'
+        id: slack-msg
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "The Pull Request Branch name started with lingohub, was empty and was closed"  
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
