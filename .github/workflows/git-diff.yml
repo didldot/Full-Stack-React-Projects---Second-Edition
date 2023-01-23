@@ -36,13 +36,8 @@ jobs:
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-  close-pull-request:
-    if: startsWith(github.head_ref, 'lingohub-') && env.GIT_DIFF && !env.MATCHED_FILES
-    runs-on: ubuntu-latest
-    steps:
-      # - TODO close pull request
-      - name: 'Send Slack Message'
-        id: slack-msg
+      - name: close-pull-request
+        if: startsWith(github.head_ref, 'lingohub-') && env.GIT_DIFF && !env.MATCHED_FILES
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
