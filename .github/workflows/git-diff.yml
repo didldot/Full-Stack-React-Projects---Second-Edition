@@ -38,6 +38,11 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: close-pull-request
         if: startsWith(github.head_ref, 'lingohub-') && env.GIT_DIFF && !env.MATCHED_FILES
+        uses: superbrothers/close-pull-request@v3
+        with:
+          comment: 'Pull Request was automatically closed by the Github Action'
+      - name: close-pull-request-slack-message
+        if: startsWith(github.head_ref, 'lingohub-') && env.GIT_DIFF && !env.MATCHED_FILES
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
